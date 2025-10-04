@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
-      {/* Header with optimized critical image */}
+      {/* Header con imagen crítica optimizada */}
       <div className="relative bg-gradient-to-r from-green-400 to-blue-600 overflow-hidden">
         <div className="absolute inset-0">
           <img 
@@ -51,7 +51,7 @@ function App() {
         </div>
       </div>
 
-      {/* Main content with poor structure */}
+      {/* Contenido principal con estructura mejorada */}
       <div className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <SearchBar onSearch={handleSearch} isLoading={loading} />
@@ -93,7 +93,7 @@ function App() {
         </div>
       </div>
 
-      {/* Footer with optimized lazy loading */}
+      {/* Footer con lazy loading optimizado */}
       <div className="relative bg-gray-900 text-white overflow-hidden">
         <div className="absolute inset-0">
           <img 

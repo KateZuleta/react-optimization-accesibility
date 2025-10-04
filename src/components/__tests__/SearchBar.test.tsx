@@ -3,15 +3,15 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import SearchBar from '../SearchBar';
 
-describe('SearchBar Component', () => {
+describe('Componente SearchBar', () => {
   const mockOnSearch = jest.fn();
 
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  describe('Rendering', () => {
-    it('should render search input with correct placeholder', () => {
+  describe('Renderizado', () => {
+    it('debe renderizar el input de búsqueda con el placeholder correcto', () => {
       render(<SearchBar onSearch={mockOnSearch} />);
       
       const searchInput = screen.getByRole('textbox', { name: /search\.placeholder/i });
